@@ -1,0 +1,69 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --padding-right-panel: 8px;
+}
+
+body {
+    height: 100vh;
+    margin: 0px; 
+    display: flex;
+}
+
+.left-body {
+    background-image: url('images/river-plate.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 35vw;
+
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65vw;
+    background-color:rgb(235, 25, 46);
+}
+
+.right-container > p {
+    padding: var(--padding-right-panel);
+}
+
+.left-container {
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.left-container-logo {
+    height: 55px;
+    width: 45px;
+}
+
+.left-container-text {
+    margin-left: 5px;
+    font-size: clamp(16px, 2vw, 48px);
+}
+
+.form-container {
+    background-color: white;
+    padding: var(--padding-right-panel);
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+
+form > button {
+    margin-left: var(--padding-right-panel);
+}
