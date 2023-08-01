@@ -16,8 +16,8 @@
         </div>
     </div>
     <main class="right-container">
-        <p>
-            Esta es la página del más grande. Anotate para poder hacerte socio.
+        <p class="right-container-header">
+            Esta es la página del más <i>GRANDE</i>. Anotate para poder hacerte socio.
 
             Ya sabemos que querés ser del más grande.
         </p>
@@ -26,34 +26,29 @@
                 <h3>Dale papu!</h3>
                 <div class="form-input-container">
                     <div class="form-name">
-                        <label for="name">First Name*
-                            <input type="text" id="name" name="name" required>
-                        </label>
+                        <label for="name">First Name*</label>
+                        <input type="text" id="name" name="name" minlength="1" maxlength="50" placeholder=" " required>
                     </div>
                     <div class="form-last-name">
-                        <label for="lastname">Last Name*
-                            <input type="text" id="lastname" name="lastname" required>
-                        </label>
+                        <label for="lastname">Last Name*</label>
+                        <input type="text" id="lastname" name="lastname" minlength="1" maxlength="50" placeholder=" " required>
                     </div>
                     <div class="form-email">
-                        <label for="email">Email*
-                            <input type="email" id="email" name="email" required>
-                        </label>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder=" " required>
                     </div>
                     <div class="form-phone">
-                        <label for="tel">Phone Number*
-                            <input type="tel" id="tel" name="tel" required>
-                        </label>
+                        <label for="tel">Phone Number*</label>
+                        <input type="tel" id="tel" name="tel" placeholder=" " required>
                     </div>
                     <div class="form-password">
-                        <label for="password">Password*
-                            <input type="password" id="password" name="password" required>
-                        </label>
+                        <label for="password">Password*</label>
+                        <input type="password" id="password" name="password" placeholder=" " required>
+                        <span class="form-error">*Passwords do not match</span>
                     </div>
                     <div class="form-confirm-password">
-                        <label for="confirm-password">Confirm Password*
-                            <input type="password" id="confirm-password" name="confirm-password" required>
-                        </label>
+                        <label for="confirm-password">Confirm Password*</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder=" " required>
                     </div>
                 </div>
             </div>
@@ -63,6 +58,7 @@
             Already have an account? <a href="login.html">Log In</a>
         </p>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@
 
 :root {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
     --padding-right-panel: 0px 32px;
 }
 
@@ -28,7 +29,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 65vw;
-    background-color:rgb(235, 25, 46);
+    background-color:#1F1F1F;
 }
 
 .right-container > p {
@@ -58,6 +59,7 @@ body {
 
 .form-container {
     background-color: white;
+    color: black;
     padding: var(--padding-right-panel);
     padding-top: 8px;
     padding-bottom: 16px;
@@ -66,39 +68,52 @@ body {
 }
 
 button {
-    padding: 8px 32px;
+    padding: 12px 32px;
     border-radius: 5px;
-    border: 1px;
     margin-left: 32px;
-    
+    font-weight: bold;
+    color: white;
+    background-color: #F20000;
+    border: 1px solid #F20000;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: #F20000;
+    border-color: #F20000;
 }
 
 .form-input-container {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 35%;
+}
+
+a {
+    text-decoration: none;
+    color: #F20000;
+    font-weight: bold;
 }
 
 .form-input-container > div {
     flex: 0 0 50%;
-    padding: 5px;
-    max-width: 50%;
+    padding-right: 5px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
 }
 
 label {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 input {
     width: 100%;
-    padding: 12px 10px;
+    padding: 8px 5px;
     margin: 0px;
     outline: none;
-    margin-bottom: 10px;
-    border-width: 1px;
+    border: 1px solid rgba(118, 118, 118, 0.3);
     border-radius: 2px;
-    border-color: rgba(118, 118, 118, 0.3);
     box-sizing: border-box;
 }
 
@@ -109,4 +124,28 @@ input:focus {
 
 input:focus-visible {
     border-width: 1px;
+}
+
+.form-error {
+    display: block;
+    font-size: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+input#password:invalid:not(:placeholder-shown) ~.form-error{
+    visibility: visible;
+}
+
+.invalid-input {
+    border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+.right-container-header {
+    font-weight: bold;
+    font-size: 24px;
 }
