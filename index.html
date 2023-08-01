@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>River Plate - Socio</title>
 </head>
+
 <body>
     <div class="left-body">
         <div class="left-container">
@@ -21,18 +23,39 @@
         </p>
         <form>
             <div class="form-container">
-                <label>First Name</label>
-                <input type="text">
-                <label>Last Name</label>
-                <input type="text">
-                <label>Email</label>
-                <input type="email">
-                <label>Phone Number</label>
-                <input type="tel">
-                <label>Password</label>
-                <input type="password">
-                <label>Confirm Password</label>
-                <input type="password">
+                <h3>Dale papu!</h3>
+                <div class="form-input-container">
+                    <div class="form-name">
+                        <label for="name">First Name*
+                            <input type="text" id="name" name="name" required>
+                        </label>
+                    </div>
+                    <div class="form-last-name">
+                        <label for="lastname">Last Name*
+                            <input type="text" id="lastname" name="lastname" required>
+                        </label>
+                    </div>
+                    <div class="form-email">
+                        <label for="email">Email*
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                    </div>
+                    <div class="form-phone">
+                        <label for="tel">Phone Number*
+                            <input type="tel" id="tel" name="tel" required>
+                        </label>
+                    </div>
+                    <div class="form-password">
+                        <label for="password">Password*
+                            <input type="password" id="password" name="password" required>
+                        </label>
+                    </div>
+                    <div class="form-confirm-password">
+                        <label for="confirm-password">Confirm Password*
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </label>
+                    </div>
+                </div>
             </div>
             <button type="submit">Create Account</button>
         </form>
@@ -41,4 +64,5 @@
         </p>
     </main>
 </body>
+
 </html>

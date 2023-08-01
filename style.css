@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --padding-right-panel: 8px;
+    --padding-right-panel: 0px 32px;
 }
 
 body {
@@ -55,15 +59,54 @@ body {
 .form-container {
     background-color: white;
     padding: var(--padding-right-panel);
-    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    box-shadow: 5px 8px 5px 0px rgba(0, 0, 0, 0.4); 
 }
 
 button {
-    padding: 8px;
+    padding: 8px 32px;
     border-radius: 5px;
+    border: 1px;
+    margin-left: 32px;
     
 }
 
-form > button {
-    margin-left: var(--padding-right-panel);
+.form-input-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-input-container > div {
+    flex: 0 0 50%;
+    padding: 5px;
+    max-width: 50%;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 0px;
+    outline: none;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgba(118, 118, 118, 0.3);
+    box-sizing: border-box;
+}
+
+input:focus {
+    box-shadow: 5px 8px 5px 0px rgba(0, 0, 0, 0.4); 
+    border-width: 1px;
+}
+
+input:focus-visible {
+    border-width: 1px;
 }
